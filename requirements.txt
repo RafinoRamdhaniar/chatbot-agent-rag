@@ -1,0 +1,15 @@
+streamlit
+langchain
+langchain-groq
+langchain-google-genai
+python-dotenv
+langchain-community
+langchain-experimental
+sqlalchemy
+pymysql
+pandas
+openpyxl
+pypdf
+faiss-cpu
+matplotlib
+sentence-transformers

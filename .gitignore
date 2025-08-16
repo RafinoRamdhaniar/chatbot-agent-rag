@@ -1,0 +1,19 @@
+# Lingkungan Virtual Python
+venv/
+env/
+.venv/
+.env/
+__pycache__/
+
+# File Sensitif
+.env
+
+# File yang Dihasilkan oleh Agent
+/chart.png
+
+# File Cache Streamlit
+.streamlit/
+
+# File spesifik OS
+.DS_Store
+Thumbs.db
