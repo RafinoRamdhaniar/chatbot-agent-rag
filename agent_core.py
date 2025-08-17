@@ -1,5 +1,3 @@
-# agent_core.py (dengan Kemampuan Grafik dan Impor yang Diperbaiki)
-
 import os
 from dotenv import load_dotenv
 from urllib.parse import quote_plus

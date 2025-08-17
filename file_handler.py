@@ -1,4 +1,3 @@
-# file_handler.py (Diperbaiki dengan Google Embeddings dan nest_asyncio)
 import pandas as pd
 from pypdf import PdfReader
 from io import BytesIO
