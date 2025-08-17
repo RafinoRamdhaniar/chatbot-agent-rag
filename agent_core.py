@@ -34,7 +34,7 @@ def create_charting_agent():
         db = SQLDatabase.from_uri(get_db_connection_string())
         
         llm = ChatGoogleGenerativeAI(
-            model="gemini-1.5-pro-latest",
+            model="gemini-1.5-flash-latest",
             temperature=0,
         )
         

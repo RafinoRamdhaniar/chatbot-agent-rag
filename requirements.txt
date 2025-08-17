@@ -12,4 +12,5 @@ openpyxl
 pypdf
 faiss-cpu
 matplotlib
-sentence-transformers
+# sentence-transformers
+nest-asyncio
