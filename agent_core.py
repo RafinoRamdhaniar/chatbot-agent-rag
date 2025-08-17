@@ -2,6 +2,7 @@
 
 import os
 from dotenv import load_dotenv
+from urllib.parse import quote_plus
 
 from langchain_community.utilities import SQLDatabase
 from langchain_google_genai import ChatGoogleGenerativeAI
@@ -20,11 +21,13 @@ from langchain_core.messages import AIMessage, HumanMessage
 load_dotenv()
 
 def get_db_connection_string():
-    """Membentuk string koneksi database dari variabel lingkungan."""
-    return (
-        f"mysql+pymysql://{os.getenv('DB_USER')}:{os.getenv('DB_PASSWORD')}@"
-        f"{os.getenv('DB_HOST')}:{os.getenv('DB_PORT')}/{os.getenv('DB_NAME')}"
-    )
+    user = os.getenv("DB_USER")
+    password = quote_plus(os.getenv("DB_PASSWORD"))  # encode password
+    host = os.getenv("DB_HOST")
+    port = os.getenv("DB_PORT")
+    db = os.getenv("DB_NAME")
+
+    return f"mysql+pymysql://{user}:{password}@{host}:{port}/{db}"
 
 def create_charting_agent():
     """
